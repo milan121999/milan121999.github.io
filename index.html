@@ -4,132 +4,500 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Milan Paremajalu Suresh | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      display: flex;
-      min-height: 100vh;
-      background: #f5f6fa;
-    }
-    aside {
-      width: 300px;
-      background: #2f3640;
-      color: white;
-      padding: 40px 20px;
-      position: fixed;
-      height: 100%;
-    }
-    aside img {
-      width: 150px;
-      border-radius: 50%;
-      margin: 0 auto;
-      display: block;
-    }
-    aside h1 {
-      text-align: center;
-      margin-top: 20px;
-      font-size: 24px;
-    }
-    aside nav {
-      margin-top: 40px;
-    }
-    aside nav a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      margin: 20px 0;
-    }
-    main {
-      margin-left: 300px;
-      padding: 40px;
-      flex: 1;
-    }
-    section {
-      margin-bottom: 60px;
-    }
-    h2 {
-      margin-bottom: 20px;
-      color: #2f3640;
-    }
-    .project-card {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #aaa;
-    }
-  </style>
+  <title>Milan Paremajalu | Portfolio</title>
+
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
-  <aside>
-    <img src="Paremajalu Suresh_Milan.jpg" alt="Milan Paremajalu">
-    <h1>Milan Paremajalu</h1>
-    <nav>
-      <a href="#about"><i class="fas fa-user"></i> About</a>
-      <a href="#resume"><i class="fas fa-file"></i> Resume</a>
-      <a href="#projects"><i class="fas fa-code"></i> Projects</a>
-      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-    </nav>
-  </aside>
+  <div id="particles-js"></div>
 
   <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Business Intelligence Analyst with 2+ years of experience in SQL, advanced Excel, and BI tools. Skilled in transforming complex data into actionable insights, driving cost reduction and process improvements. Passionate about data storytelling, collaboration, and continuous learning.</p>
-    </section>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/Paremajalu Suresh_Milan.jpg" alt="Milan Paremajalu" width="80">
+        </figure>
 
-    <section id="resume">
-      <h2>Resume</h2>
-      <p><a href="assets/resume.pdf" target="_blank">Download My Resume (PDF)</a></p>
-      <ul>
-        <li><strong>Education:</strong> Masters in Business Analytics, ASU (GPA: 3.88/4.0); B.E. in ECE (GPA: 7.9/10)</li>
-        <li><strong>Experience:</strong> Software Engineering Analyst at Accenture</li>
-        <li><strong>Skills:</strong> Python, SQL, Tableau, Power BI, Minitab, Excel, SPSS, Hypothesis Testing</li>
-      </ul>
-    </section>
+        <div class="info-content">
+          <h1 class="name">Milan Paremajalu</h1>
+          <p class="title">Business Analyst</p>
+        </div>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-card">
-        <h3>ERCOT Electricity Price Forecasting</h3>
-        <p>Improved a LightGBM-based forecasting model for ERCOT prices using lag features and weather data. Reduced MAE by 10% and improved prediction accuracy by 12%.</p>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
       </div>
-      <div class="project-card">
-        <h3>Design of Experiments – LEGO Project</h3>
-        <p>Used Minitab to optimize a LEGO car performance through DOE and ANOVA. Reduced test cycles by 30% while maintaining statistical power.</p>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:milanparemajalu@gmail.com" class="contact-link">milanparemajalu@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+14807914670" class="contact-link">+1 (480) 791-4670</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Tempe, Arizona, USA</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/milan-paremajalu-suresh-311028205/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/milan121999" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="project-card">
-        <h3>Excel Solver – Production Optimization</h3>
-        <p>Built an Excel-based LP model to optimize factory output, leading to a $77,000 net profit and 25.4% improvement in profitability.</p>
-      </div>
+    </aside>
+
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Projects</button></li>
+        </ul>
+      </nav>
+
+      <article class="about active" data-page="about">
+        <header><h2 class="h2 article-title">About me</h2></header>
+        <section class="about-text">
+          <p>
+            I'm Milan Paremajalau, a Business Intelligence Analyst with 2+ years of experience turning raw data into strategic insights. I specialize in SQL, Excel, Tableau, and Power BI, and have applied these tools across industries to improve reporting, optimize processes, and guide data-driven decisions.
+            </p>
+            <p>
+            I recently completed my Master’s in Business Analytics from Arizona State University, where I developed advanced skills in machine learning, time series forecasting, optimization modeling, and statistical analysis. My academic and professional background allows me to bridge business context with technical execution effectively.
+            </p>
+            <p>
+            During my time at Accenture, I led automation initiatives that cut testing costs by 90%, collaborated with cross-functional teams to optimize deployment timelines, and maintained delivery quality through reusable frameworks. My capstone projects involved forecasting ERCOT electricity prices using LightGBM and conducting process improvement with Lean Six Sigma.
+            </p>
+            <p>
+            I’m passionate about using data to drive measurable impact and am actively exploring opportunities where I can contribute to business growth through analytics, storytelling, and intelligent automation. Let’s connect if you're looking for someone who can bring both analytical rigor and real-world business value.
+            </p>
+
+        </section>
+      </article>
+
+      <!-- Updated Resume Section -->
+    <article class="resume" data-page="resume">
+    <header><h2 class="h2 article-title">Resume</h2></header>
+
+    <section class="timeline">
+        <div class="title-wrapper">
+        <div class="icon-box">
+            <ion-icon name="book-outline"></ion-icon>
+        </div>
+        <h3 class="h3">Education</h3>
+        </div>
+
+        <ol class="timeline-list">
+        <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+            W. P. Carey School of Business, Arizona State University
+            <span class="right-align">Tempe, AZ, US</span>
+            </h4>
+            <span class="program">
+            Master of Science in Business Analytics, GPA: 3.88/4.0
+            <span class="right-align-gold">Aug 2024 – May 2025</span>
+            </span>
+            <p class="timeline-text">
+            Business Process Analytics, Machine Learning in Business, Analytical Decision Modelling, Marketing Analytics
+            </p>
+        </li>
+
+        <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+            Vidyavardhaka College of Engineering
+            <span class="right-align">India</span>
+            </h4>
+            <span class="program">
+            Bachelor of Engineering in Electronics and Communication, GPA: 7.9/10.0
+            <span class="right-align-gold">Aug 2017 – Aug 2021</span>
+            </span>
+            <p class="timeline-text">
+            Python Programming, Engineering Mathematics, VLSI Design, Fiber Optics and Networks, Control Systems
+            </p>
+        </li>
+        </ol>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p><i class="fas fa-envelope"></i> milanparemajalu@gmail.com</p>
-      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/milan-paremajalu-suresh-311028205/" target="_blank">LinkedIn</a></p>
-      <p><i class="fab fa-github"></i> <a href="https://github.com/milan121999" target="_blank">GitHub</a></p>
-    </section>
+          <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="briefcase-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Experience</h3>
+    </div>
 
-    <footer>
-      <p>&copy; 2025 Milan Paremajalu. All rights reserved.</p>
-    </footer>
+    <ol class="timeline-list">
+      <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+            Accenture
+            <span class="right-align">Bangalore, India</span>
+            </h4>
+
+            <span class="program">
+            Custom Software Engineering Analyst
+            <span class="right-align-gold">Oct 2021 – May 2024</span>
+            </span>
+
+        <ul>
+          <li class = "timeline-text-ul">
+                <p class = "timeline-text-ul-item">Utilized SQL and data-driven analysis to transform web development processes in the telecommunications sector, ensuring timely project completion and maintaining defect rates below 5%.
+                </p>
+            </li>
+          <li class = "timeline-text-ul">Developed an automation tool that reduced integration testing costs by 90%, enhancing project efficiency and streamlining operational processes.</li>
+          <li class = "timeline-text-ul">Coordinated cross-functional teams and external partners to expedite project completion by 25%, aligning strategic insights with operational objectives to improve deployment timelines and foster customer satisfaction.</li>
+          <li class = "timeline-text-ul">Enhanced software performance by 15% and strengthened security through the application of analytical techniques and data-driven strategies, improving system reliability and response times.</li>
+          <li class = "timeline-text-ul">Boosted team productivity by 30% by introducing scalable frameworks and employing process optimization strategies to track and enhance technology adoption.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+        <!-- Updated Skill Section with All Skills Together -->
+        <section class="skill">
+        <h3 class="h3 skill-title">Skills</h3>
+        <ul class="skill-list">
+
+            <li class="skill-item">
+            <div class="skill-icon-box">
+                <img src="./assets/images/python.png" alt="Python" width="40">
+            </div>
+            <div class="skill-content-box">Python</div>
+            </li>
+
+            <li class="skill-item">
+            <div class="skill-icon-box">
+                <img src="./assets/images/sql.jpg" alt="SQL" width="40">
+            </div>
+            <div class="skill-content-box">SQL</div>
+            </li>
+
+            <li class="skill-item">
+            <div class="skill-icon-box">
+                <img src="./assets/images/excel.png" alt="Excel" width="40">
+            </div>
+            <div class="skill-content-box">Excel</div>
+            </li>
+
+            <li class="skill-item">
+            <div class="skill-icon-box">
+                <img src="./assets/images/tableau.svg" alt="Tableau" width="40">
+            </div>
+            <div class="skill-content-box">Tableau</div>
+            </li>
+
+            <li class="skill-item">
+            <div class="skill-icon-box">
+                <img src="./assets/images/powerBI.png" alt="Power BI" width="40">
+            </div>
+            <div class="skill-content-box">Power BI</div>
+            </li>
+
+            <li class="skill-item">
+            <div class="skill-icon-box">
+                <img src="./assets/images/minitab.png" alt="Minitab" width="40">
+            </div>
+            <div class="skill-content-box">Minitab</div>
+            </li>
+
+            <li class="skill-item">
+            <div class="skill-icon-box">
+                <img src="./assets/images/hypothesisTesting.png" alt="Hypothesis Testing" width="40">
+            </div>
+            <div class="skill-content-box">Hypothesis Testing</div>
+            </li>
+
+            <li class="skill-item">
+            <div class="skill-icon-box">
+                <img src="./assets/images/marketingAnalytics.png" alt="Marketing Analytics" width="40">
+            </div>
+            <div class="skill-content-box">Marketing Analytics</div>
+            </li>
+
+            <li class="skill-item">
+            <div class="skill-icon-box">
+                <img src="./assets/images/spss.png" alt="SPSS" width="40">
+            </div>
+            <div class="skill-content-box">SPSS</div>
+            </li>
+
+            <li class="skill-item">
+            <div class="skill-icon-box">
+                <img src="./assets/images/dataMining.png" alt="Data Mining" width="40">
+            </div>
+            <div class="skill-content-box">Data Mining</div>
+            </li>
+
+            <li class="skill-item">
+            <div class="skill-icon-box">
+                <img src="./assets/images/businessAnalysis.png" alt="Business Analysis" width="40">
+            </div>
+            <div class="skill-content-box">Business Analysis</div>
+            </li>
+
+            <li class="skill-item">
+            <div class="skill-icon-box">
+                <img src="./assets/images/riskAnalysis.png" alt="Risk Analysis" width="40">
+            </div>
+            <div class="skill-content-box">Risk Analysis</div>
+            </li>
+
+        </ul>
+        </section>
+
+      </article>
+
+
+        <!-- PROJECTS -->
+
+
+        <article class="projects" data-page="projects">
+        <header><h2 class="h2 article-title">Projects</h2></header>
+        <section class="project-posts">
+            <ul class="project-posts-list">
+
+            <li class="project-post-item">
+                <a>
+                <figure class="project-banner-box">
+                    <img src="./assets/images/electricityPriceForecasting.webp" alt="ERCOT Forecasting" loading="lazy">
+                </figure>
+                <div class="project-content">
+                    <div class="project-meta">
+                    <span class="dot"></span>
+                    <p class="project-category">Time Series</p>
+                    <span class="dot"></span>
+                    <p class="project-category">Forecasting</p>
+                    <span class="dot"></span>
+                    <p class="project-category">Machine Learning</p>
+                    </div>
+                    <h3 class="h4 project-item-title">ERCOT Electricity Price Forecasting</h3>
+                    <p class="project-text">
+                    Enhanced a LightGBM model to forecast ERCOT electricity prices, reducing MAE by 10% through engineered lag and volatility features.
+                    </p>
+                    <p class = "project-text">
+                    Improved prediction accuracy by 12% by processing large datasets, ensuring data integrity, and leveraging visualization tools to provide actionable market insights.
+                    </p>
+                    <div class="project-tech">
+                    <span class="tech">Python</span>
+                    </div>
+                    <div class="project-tech">
+                    <span class="tech">LightGBM</span>
+                    </div>
+                    <div class="project-tech">
+                    <span class="tech">Pandas</span>
+                    </div>
+                </div>
+                </a>
+            </li>
+
+            <li class="project-post-item">
+                <a>
+                <figure class="project-banner-box">
+                    <img src="./assets/images/lego.jpg" alt="LEGO DOE" loading="lazy">
+                </figure>
+                <div class="project-content">
+                    <div class="project-meta">
+                    <span class="dot"></span>
+                    <p class="project-category">Statistical Analysis</p>
+                    <span class="dot"></span>
+                    <p class="project-category">Experimental Analysis</p>
+                    <span class="dot"></span>
+                    <p class="project-category">Hypothesis Testing</p>
+                    </div>
+                    <h3 class="h4 project-item-title">Design of Experiments – LEGO Project</h3>
+                    <p class="project-text">
+                        Conducted a Design of Experiments (DOE) analysis using Minitab to optimize the performance of a Lego car, evaluating five key factors and applying ANOVA to identify significant variables affecting speed and stability. 
+                    </p>
+                    <p class ="project-text">
+                        Revised testing methodology, reducing experimental iterations by 30% while maintaining statistical significance, improving overall process efficiency. 
+                    </p>
+                    <div class="project-tech">
+                    <span class="tech">Minitab</span>
+                    </div>
+                    <div class="project-tech">
+                    <span class="tech">DOE</span>
+                    </div>
+                    <div class="project-tech">
+                    <span class="tech">ANOVA</span>
+                    </div>
+                </div>
+                </a>
+            </li>
+
+            <li class="project-post-item">
+                <a>
+                <figure class="project-banner-box">
+                    <img src="./assets/images/excel_optimization.webp" alt="Production Optimization" loading="lazy">
+                </figure>
+                <div class="project-content">
+                    <div class="project-meta">
+                    <span class="dot"></span>
+                    <p class="project-category">Operations Research</p>
+                    <span class="dot"></span>
+                    <p class="project-category">Excel Solver</p>
+                    <span class="dot"></span>
+                    <p class="project-category">Optimization</p>
+                    </div>
+                    <h3 class="h4 project-item-title">Production Optimization</h3>
+                    <p class="project-text">
+                        Optimized production allocation by building an Excel-based Solver model, generating $77,000 in net monthly profit. 
+                    </p>
+                    <p class ="project-text">
+                        Increased profitability by 25.4% by providing actionable recommendations on resource reallocation, production discontinuation, and efficiency improvements. 
+                    </p>
+                    <div class="project-tech">
+                    <span class="tech">LP Modeling</span>
+                    </div>
+                    <div class="project-tech">
+                    <span class="tech">Solver</span>
+                    </div>
+                    <div class="project-tech">
+                    <span class="tech">Excel</span>
+                    </div>
+                </div>
+                </a>
+            </li>
+
+
+            <li class="project-post-item">
+                <a>
+                <figure class="project-banner-box">
+                    <img src="./assets/images/gentech.png" alt="Lean Six Sigma" loading="lazy">
+                </figure>
+                <div class="project-content">
+                    <div class="project-meta">
+                    <span class="dot"></span>
+                    <p class="project-category">Lean Six Sigma</p>
+                    <span class="dot"></span>
+                    <p class="project-category">Process Improvement</p>
+                    <span class="dot"></span>
+                    <p class="project-category">Data Analysis</p>
+                    </div>
+                    <h3 class="h4 project-item-title">Lean Six Sigma Case Study - GENTECH</h3>
+                    <p class = "project-text">
+                        Streamlined proposal processes using Lean Six Sigma; developed Tableau and Excel visualizations to uncover bottlenecks and recommend automation, resulting in a 15% reduction in cycle time.
+                    </p>
+                    <div class="project-tech">
+                    <span class="tech">Tableau</span>
+                    </div>
+                    <div class="project-tech">
+                    <span class="tech">Minitab</span>
+                    </div>
+                    <div class="project-tech">
+                    <span class="tech">StatTools</span>
+                    </div>
+                </div>
+                </a>
+            </li>
+
+            <li class="project-post-item">
+                <a>
+                <figure class="project-banner-box">
+                    <img src="./assets/images/motorVehicleThefts.png" alt="Lean Six Sigma" loading="lazy">
+                </figure>
+                <div class="project-content">
+                    <div class="project-meta">
+                    <span class="dot"></span>
+                    <p class="project-category">Data Analysis</p>
+                    <span class="dot"></span>
+                    <p class="project-category">Data visualization</p>
+                    </div>
+                    <h3 class="h4 project-item-title">Motor Vehicle Theft Analysis - Phoenix</h3>
+                    <p class = "project-text">
+                        Conducted spatial and temporal analysis of motor vehicle thefts in Phoenix to identify high-risk areas and peak crime hours, enabling data-driven crime prevention strategies.
+                    </p>
+                    <div class="project-tech">
+                    <span class="tech">Python</span>
+                    </div>
+                    <div class="project-tech">
+                    <span class="tech">Excel</span>
+                    </div>
+                    <div class="project-tech">
+                    <span class="tech">Pandas</span>
+                    </div>
+                    <div class="project-tech">
+                    <span class="tech">Matplotlib</span>
+                    </div>
+                </div>
+                </a>
+            </li>
+
+            <li class="project-post-item">
+                <a>
+                <figure class="project-banner-box">
+                    <img src="./assets/images/sentiment_analysis.png" alt="Lean Six Sigma" loading="lazy">
+                </figure>
+                <div class="project-content">
+                    <div class="project-meta">
+                    <span class="dot"></span>
+                    <p class="project-category">Customer Experience Analytics</p>
+                    <span class="dot"></span>
+                    <p class="project-category">Natural Language Processing</p>
+                    </div>
+                    <h3 class="h4 project-item-title">Sentiment Analysis of Panda Express Reviews</h3>
+                    <p class = "project-text">
+                        Analyzed customer reviews from four U.S. states using BERTopic and traditional sentiment analysis to extract key service and food quality issues. Delivered actionable insights to improve customer satisfaction, staff training, and targeted marketing strategies.
+                    </p>
+                    <div class="project-tech">
+                    <span class="tech">Python</span>
+                    </div>
+                    <div class="project-tech">
+                    <span class="tech">NLTK</span>
+                    </div>
+                    <div class="project-tech">
+                    <span class="tech">Pandas</span>
+                    </div>
+                    <div class="project-tech">
+                    <span class="tech">BERTopic</span>
+                    </div>
+                </div>
+                </a>
+            </li>
+
+            </ul>
+        </section>
+        </article>
+
+    </div>
   </main>
+
+  <script src="./assets/js/particles.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
